@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <font color= black ; face= monospace>   
+  <h1 class="titulo">-     Top Secret   -</h1>
+  <style>
+    .centrado{text-align:center;border:1px dotted #000; padding:8px;}
+    div{width:50%;border:1px dotted #f00;padding:8px;margin:auto;}
+    center{margin:16px 0;}
+  </style>
+  <main class="main">
+    <section class="form box">
+      <form action="">
+        <label for="input-texto"><h2>Only lowercase</h2></label>
+        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Put your secrets on me!">
+        <!--<input class="btn" type="submit" value="encrypt!" id="btn-encriptar">-->
+        <!--<input class="btn" type="submit" value="decrypt!" id="btn-desencriptar">-->
+          <button type="button" class="btn" id="btn-encriptar" onclick="encriptar()">encrypt!</button>
+          <button type="button" class="btn" id="btn-desencriptar" onclick="desencriptar()">decrypt!</button>
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <h2 id="">Encrypted Message:</h2>
+      <input class="text-input" type="text" id="msg"></input>
+      <button type="button" class="btn" id="btn-copy" onclick="copyToClipBoard()">copy</button>
+    </section>
+  </main>
+</font>
+ <script src="script.js"></script>
+</body>
+</html>
